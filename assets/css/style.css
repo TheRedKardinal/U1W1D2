@@ -5,3 +5,13 @@ table {
 th, td, caption {
     border: 1px solid black;  
 }
+
+.container section {
+display: inline-block;
+width: 48%;
+}
+
+.container section:last-child {
+    display: block;
+    width: 100%;
+}

@@ -10,78 +10,84 @@
 <body>
 
     <header>
-        <h1>FORM</h1>
+        <h1>TABELLE</h1>
         <nav>
             <ul>
                 <li><a href="index.html">TABELLE</a></li>
                 <li><a href="form.html">FORM</a></li>
+                <li><a href="multimedia.html">MULTIMEDIA</a></li>
+                <li><a href="layout.html">LAYOUT</a></li>
+
             </ul>
         </nav>
     </header>
 
     <h4>*=Campi Obbligatori</h5>
-    <form method="get" action="grazie.html">
-<!-- campi di input -->
-        <label for="name">NOME COMPLETO*</label>
-        <input type="text" id="name" name="name" placeholder="Inserisci il nome completo" required />
-        <label for="address">INDIRIZZO</label>
-        <input type="text" id="address" name="address" placeholder="inserisci l'indirizzo" />
-        <label for="email">EMAIL</label>
-        <input type="email" id="email" name="email" placeholder="Inserisci una mail valida" /> <br /><br />
-        <label for="username">USERNAME*</label>
-        <input type="text" id="username" name="username" placeholder="Inserisci una username" required />
-        <label for="password">PASSWORD*</label>
-        <input type="password" id="password" name="password" placeholder="Scegli una password" required /> <br /><br />
-        <label for="joindate">DATA DI ISCRIZIONE</label>
-        <input type="date" id="joindate" name="joindata" />
-        <label for="numero-corsi">NUMERO CORSI</label>
-        <input type="number" id="courses" name="courses" placeholder="Numero corsi" min="1" max="5" required /> <br /><br />
-        <label for="frequency">
+        <form method="get" action="grazie.html">
+            <!-- campi di input -->
+            <label for="name">NOME COMPLETO*</label>
+            <input type="text" id="name" name="name" placeholder="Inserisci il nome completo" required />
+            <label for="address">INDIRIZZO</label>
+            <input type="text" id="address" name="address" placeholder="inserisci l'indirizzo" />
+            <label for="email">EMAIL</label>
+            <input type="email" id="email" name="email" placeholder="Inserisci una mail valida" /> <br /><br />
+            <label for="username">USERNAME*</label>
+            <input type="text" id="username" name="username" placeholder="Inserisci una username" required />
+            <label for="password">PASSWORD*</label>
+            <input type="password" id="password" name="password" placeholder="Scegli una password" required />
+            <br /><br />
+            <label for="joindate">DATA DI ISCRIZIONE</label>
+            <input type="date" id="joindate" name="joindata" />
+            <label for="numero-corsi">NUMERO CORSI</label>
+            <input type="number" id="courses" name="courses" placeholder="Numero corsi" min="1" max="5" required />
+            <br /><br />
+            <label for="frequency">
 
-            <!-- select -->
-            <h4>Scegli la frequenza</h4>
-        </label>
-        <select name="frequency" id="frequency">
-            <option value="" selected></option>
-            <option value="FT">Full Time</option>
-            <option value="PT">Part Time</option>
-            <option value="S">Serale</option>
-        </select> <br /><br />
+                <!-- select -->
+                <h4>Scegli la frequenza</h4>
+            </label>
+            <select name="frequency" id="frequency">
+                <option value="" selected></option>
+                <option value="FT">Full Time</option>
+                <option value="PT">Part Time</option>
+                <option value="S">Serale</option>
+            </select> <br /><br />
 
-        <!-- textarea -->
-<label for="message">Inviaci un message</label>
-<textarea name="message" id="message" rows="3" cols="50" placeholder="Inserisci il tuo messaggio"></textarea>
+            <!-- textarea -->
+            <label for="message">Inviaci un message</label>
+            <textarea name="message" id="message" rows="3" cols="50"
+                placeholder="Inserisci il tuo messaggio"></textarea>
 
-<!-- checkbob e radio button -->
- <h4>Scegli i linguaggi preferiti</h4>
- <input type="checkbox" id="html" name="html" value="html" />
- <label for="html">HTML</label> <br />
-  <input type="checkbox" id="css" name="css" value="css" />
- <label for="css">CSS</label> <br />
- <input type="checkbox" id="javascript" name="javascript" value="javascript" />
- <label for="javascript">JavaScript</label> <br />
- <input type="checkbox" id="java" name="java" value="java" />
- <label for="java">Java</label> <br />
- <input type="checkbox" id="php" name="php" value="php" />
- <label for="php">PHP</label> <br />
- 
- <br /><br />
+            <!-- checkbob e radio button -->
+            <h4>Scegli i linguaggi preferiti</h4>
+            <input type="checkbox" id="html" name="html" value="html" />
+            <label for="html">HTML</label> <br />
+            <input type="checkbox" id="css" name="css" value="css" />
+            <label for="css">CSS</label> <br />
+            <input type="checkbox" id="javascript" name="javascript" value="javascript" />
+            <label for="javascript">JavaScript</label> <br />
+            <input type="checkbox" id="java" name="java" value="java" />
+            <label for="java">Java</label> <br />
+            <input type="checkbox" id="php" name="php" value="php" />
+            <label for="php">PHP</label> <br />
 
- <!-- Perché i radio button siano selezionabili alternativamente devono appartenere alla stessa famiglia, cioè avere lo stesso name -->
- <h4>Seleziona un tipo di corso</h4>
- <input type="radio" id="fullstack" name="coursetype" value="fullstack">
- <label for="fullstack">FULL-STACK</label> <br />
-  <input type="radio" id="frontend" name="coursetype" value="frontend">
- <label for="frontend">FRONT-END</label> <br />
- <input type="radio" id="backend" name="coursetype" value="backend">
- <label for="backend">BACK-END</label> <br />
+            <br /><br />
 
-        <p>&nbsp;</p>
-        <!-- button -->
-        <button type="submit" value="invia">INVIA</button>
-        <button type="reset" value="resetta">CANCELLA</button>
+            <!-- Perché i radio button siano selezionabili alternativamente devono appartenere alla stessa famiglia, cioè avere lo stesso name -->
+            <h4>Seleziona un tipo di corso</h4>
+            <input type="radio" id="fullstack" name="coursetype" value="fullstack">
+            <label for="fullstack">FULL-STACK</label> <br />
+            <input type="radio" id="frontend" name="coursetype" value="frontend">
+            <label for="frontend">FRONT-END</label> <br />
+            <input type="radio" id="backend" name="coursetype" value="backend">
+            <label for="backend">BACK-END</label> <br />
 
-    </form>
+            <p>&nbsp;</p>
+            <!-- button -->
+            <button type="submit" value="invia">INVIA</button>
+            <button type="reset" value="resetta">CANCELLA</button>
+
+        </form>
 
 </body>
 
