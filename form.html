@@ -19,22 +19,23 @@
         </nav>
     </header>
 
+    <h4>*=Campi Obbligatori</h5>
     <form method="get" action="grazie.html">
 <!-- campi di input -->
-        <label for="name">NOME</label>
+        <label for="name">NOME COMPLETO*</label>
         <input type="text" id="name" name="name" placeholder="Inserisci il nome completo" required />
         <label for="address">INDIRIZZO</label>
         <input type="text" id="address" name="address" placeholder="inserisci l'indirizzo" />
         <label for="email">EMAIL</label>
-        <input type="text" id="email" name="email" placeholder="Inserisci una mail valida" /> <br /><br />
-        <label for="username">USERNAME</label>
+        <input type="email" id="email" name="email" placeholder="Inserisci una mail valida" /> <br /><br />
+        <label for="username">USERNAME*</label>
         <input type="text" id="username" name="username" placeholder="Inserisci una username" required />
-        <label for="passoerd">PASSWORD</label>
+        <label for="password">PASSWORD*</label>
         <input type="password" id="password" name="password" placeholder="Scegli una password" required /> <br /><br />
         <label for="joindate">DATA DI ISCRIZIONE</label>
         <input type="date" id="joindate" name="joindata" />
         <label for="numero-corsi">NUMERO CORSI</label>
-        <input type="number" id="courses" name="courses" placeholder="Numero corsi" required /> <br /><br />
+        <input type="number" id="courses" name="courses" placeholder="Numero corsi" min="1" max="5" required /> <br /><br />
         <label for="frequency">
 
             <!-- select -->
